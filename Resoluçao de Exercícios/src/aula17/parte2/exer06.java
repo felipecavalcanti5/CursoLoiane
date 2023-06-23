@@ -1,4 +1,4 @@
-package aula16a17;
+package aula17.parte2;
 
 public class exer06 {
     public static void main(String[] args) {

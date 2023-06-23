@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Lampada abajour = new Lampada();
+        abajour.lampada(220, "30", "amarelo", true);
+        System.out.println("A voltagem do abajour é " + abajour.getVoltagem());
     }
 }
