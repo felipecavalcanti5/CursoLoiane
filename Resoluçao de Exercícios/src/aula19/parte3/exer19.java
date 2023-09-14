@@ -26,37 +26,51 @@ public class exer19 {
 
             System.out.println(i+1 + "º" + " aluno: Digite a primeira nota: ");
             Nota1[i] = scan.nextInt();
+            Result[i] = Nota1[i];
 
-            /*if (i == 0 ){
-                menorIdade = vetorA[i];
-                maiorIdade = vetorA[i];
-            }else{
-                if (vetorA[i]< menorIdade){
-                    menorIdade = vetorA[i];
-                    pMenor = i+1;
-
-                }if (vetorA[i]> maiorIdade){
-                    maiorIdade = vetorA[i];
-                    pMaior = i+1;
-                }*/
             }
         for (int i=0; i <Nota2.length; i++){
 
             System.out.println(i+1 + "º" + " aluno: Digite a segunda nota: ");
             Nota2[i] = scan.nextInt();
+            Result[i] += Nota2[i];
 
         }
 
-            //vetorB[i] = sqrt(vetorA[i]);
-            //vetorB[i] = vetorA[i] % 2;
+
+        for(int i=0; i< Nota1.length; i++){
+            System.out.print(i+1 + "º aluno - primeira nota = ");
+            System.out.println(Nota1[i]);
 
         }
 
-        /*System.out.print("primeira nota = ");
-        for(int q=0; i< Nota1.length; q++){
-            System.out.print(Nota1[q] + " ");
+        System.out.println(" ");
+
+        for(int i=0; i< Nota2.length; i++){
+            System.out.print(i+1 + "º aluno - segunda nota = ");
+            System.out.println(Nota2[i] + " ");
 
         }
+
+        System.out.println(" ");
+
+        for(int i=0; i< Result.length; i++){
+            double media = Result[i]/2;
+            System.out.print(i+1 + "º aluno - média = ");
+            System.out.println(media + " ");
+            if (media>= 7){
+                System.out.println(" (APROVADO)");
+            }else{
+                System.out.println(" (REPROVADO)");
+            }
+
+
+        }
+
+
+        }
+
+        /**//*
 
         System.out.println(" ");
 
